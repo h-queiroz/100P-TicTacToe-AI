@@ -155,3 +155,15 @@ h2{
   transform: scale(1.1);
   color: black;
 }
+
+@media (max-height: 768px){
+  .gameDiv{
+    width: 360px;
+    height: 360px;
+  }
+
+  .box{
+    width: 116px;
+    height: 116px;
+  }
+}
