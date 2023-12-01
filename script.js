@@ -29,7 +29,7 @@ reset.addEventListener("click", () => {
 // Setting Verify Table Function
 function verifyTable(){
   // 0 = " ", 1 = "X", 2 = "O
-  let table [0, 0, 0, 0, 0, 0, 0, 0, 0];
+  let table = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   for(let i = 1; i < 10; i++){
     gameDiv.children[i-1].firstElementChild();
   }

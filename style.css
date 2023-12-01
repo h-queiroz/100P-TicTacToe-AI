@@ -22,17 +22,24 @@ h1{
   top: 50%;
   left: 50%;
   translate: -50% -50%;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .box{
-  width: 160px;
-  height: 160px;
-  display: inline-block;
-  border: 2px solid black;
+  width: 157px;
+  height: 157px;
+  background-color: #3d3d3d;
   position: relative;
 }
 
 .box span{
+  color: white;
   user-select: none;
   position: absolute;
   top: 50%;
