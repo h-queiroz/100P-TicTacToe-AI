@@ -7,6 +7,7 @@ let crossline = document.querySelector(".crossline");
 // 0 = " ", 1 = "X", 2 = "O"
 let table = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
+// Creating game boxes and adding click event
 for(let i = 0; i < 9; i++){
   let box = document.createElement("div");
   let span = document.createElement("span");
