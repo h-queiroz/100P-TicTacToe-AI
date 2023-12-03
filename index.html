@@ -8,12 +8,30 @@
   </head>
   <body>
     <h1>Tic-Tac-Toe</h1>
-    <h2>Turn: <span></span></h2>
+    <div class="gameInfo">
+      <div class="modeToggleDiv">
+        <div class="selected"></div>
+        <span>PvP</span>
+        <span>PvC</span>
+      </div>
+      <div class="modeOptions">
+        <div>
+          <h2>Turn: <span></span></h2>
+        </div>
+        <div>
+          <ul>
+            <li> <label> <input type="radio" name="difficulty" value="easy" checked>Easy</label> </li>
+            <li> <label> <input type="radio" name="difficulty" value="normal">Normal</label> </li>
+            <li> <label> <input type="radio" name="difficulty" value="hard">Hard</label> </li>
+            <li> <label> <input type="radio" name="difficulty" value="impossible">Impossible</label> </li>
+          </ul>
+        </div>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
     <div class="gameDiv">
       <div class="crossline"></div>
     </div>
-
-    <button id="reset">Reset</button>
 
     <script src="script.js"></script>
   </body>

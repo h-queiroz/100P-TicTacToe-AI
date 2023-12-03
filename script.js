@@ -4,6 +4,23 @@ let turn = 0;
 let turnDiv = document.querySelector("h2");
 let crossline = document.querySelector(".crossline");
 
+let modeToggleDiv = document.querySelector(".modeToggleDiv");
+let modeOptionsDiv = document.querySelector(".modeOptions");
+modeToggleDiv.addEventListener("click", () => {
+  if(modeToggleDiv.classList.contains("clicked")){
+    modeToggleDiv.classList.remove("clicked");
+    modeOptionsDiv.classList.remove("clicked");
+    pvp = false;
+  }else{
+    modeToggleDiv.classList.add("clicked");
+    modeOptionsDiv.classList.add("clicked");
+    pvp = true;
+  }
+});
+
+// PvP == false is PvC
+let pvp = true;
+
 // 0 = " ", 1 = "X", 2 = "O"
 let table = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
